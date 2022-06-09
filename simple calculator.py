@@ -16,9 +16,10 @@ operations = {
 
 def calculator():
     subprocess.call("clear")
+    # If your using windows operating system use "cls" instead of "clear"
     n1 = float(input("Enter Your first number: "))
-    for symbol in  operations:
-        print(symbol)
+    for operator in  operations:
+        print(operator)
     should_continue = True
     while should_continue:
         selected_operation = input("Choose the operation You want to perfom: ")
